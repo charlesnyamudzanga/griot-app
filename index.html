@@ -853,15 +853,32 @@ const observer = new IntersectionObserver(entries => {
 reveals.forEach(el => observer.observe(el));
 
 // Waitlist
-function joinWaitlist() {
+async function joinWaitlist() {
   const email = document.getElementById('emailInput').value;
+  const btn = document.querySelector('.waitlist-btn');
   if (!email || !email.includes('@')) {
     document.getElementById('emailInput').style.borderColor = '#C1440E';
     return;
   }
-  document.querySelector('.waitlist-form').style.display = 'none';
-  document.getElementById('successMsg').style.display = 'block';
-  console.log('Waitlist signup:', email);
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  try {
+    const res = await fetch('https://formspree.io/f/mbdbpevb', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ email: email, source: 'Griot Waitlist' })
+    });
+    if (res.ok) {
+      document.querySelector('.waitlist-form').style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+    } else {
+      btn.textContent = 'Try Again';
+      btn.disabled = false;
+    }
+  } catch(e) {
+    btn.textContent = 'Try Again';
+    btn.disabled = false;
+  }
 }
 
 document.getElementById('emailInput').addEventListener('keypress', e => {
