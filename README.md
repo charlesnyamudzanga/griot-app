@@ -1,168 +1,156 @@
-# 🎭 Griot — Africa's AI Content Creation Platform
+# GRIOT
+### Africa's First AI-Powered Content Creation Platform
 
-> *A Griot is the keeper of stories, the voice of culture, the bridge between past and future.*
-> **griotcreate.com** | Built in Botswana 🇧🇼 | For Africa 🌍 | For the World 🌐
+> *"Every major platform was built by someone else, for someone else. Griot changes that. Not a clone. Not a copy. The original."*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Built for Africa](https://img.shields.io/badge/Built%20for-Africa-green)](https://griotcreate.com)
-[![Status](https://img.shields.io/badge/Status-In%20Development-orange)](https://griotcreate.com)
-[![Made in Botswana](https://img.shields.io/badge/Made%20in-Botswana-blue)](https://griotcreate.com)
+**Built in Gaborone, Botswana 🇧🇼 | Africa Creates 🔥**
 
----
-
-## 🌍 The Problem
-
-Every major content creation platform in the world was built by someone else, for someone else.
-
-Africa has **1.4 billion people**, **3,000 languages**, the oldest civilisations on earth, and the most vibrant music, art, fashion, film, and storytelling traditions — yet we are handed tools built in California that do not know our names, our rhythms, our symbols, or our stories.
-
-**Griot changes that.**
+[![Live](https://img.shields.io/badge/Live-griot--app.vercel.app-C4873A?style=for-the-badge)](https://griot-app.vercel.app)
+[![Open Source](https://img.shields.io/badge/Open%20Source-Yes-1C1410?style=for-the-badge)](https://github.com/charlesnyamudzanga/griot-app)
+[![Made in Botswana](https://img.shields.io/badge/Made%20in-Botswana-75AADB?style=for-the-badge)](https://griot-app.vercel.app)
+[![Product Hunt](https://img.shields.io/badge/Product%20Hunt-Launching%20May%2029-DA552F?style=for-the-badge)](https://producthunt.com)
 
 ---
 
-## ✦ What is Griot?
+## What is Griot?
 
-Griot is Africa's first AI-powered content creation platform — built from African culture, for the world.
+Griot is Africa's first AI-powered content creation platform — trained FROM African culture, not retrofitted from Western defaults.
 
-Not an African version of something else. **The original.**
+Every major AI tool was built with the West as the default. The languages, the cultural references, the creative outputs — none of it was built for Africa's 1.4 billion people.
 
+**ChatGPT doesn't know Setswana. Midjourney doesn't know Adinkra. The defaults were never us.**
+
+Griot changes that.
+
+---
+
+## What Makes Griot Different
+
+| Feature | Other AI Tools | Griot |
+|--------|----------------|-------|
+| African Languages | ❌ Limited/None | ✅ Native Support |
+| African Cultural Context | ❌ Retrofitted | ✅ Built-in |
+| African Music DNA | ❌ Western defaults | ✅ Afrobeats, Amapiano |
+| African Visual Culture | ❌ Not recognised | ✅ Kente, Adinkra |
+| Built by Africans | ❌ | ✅ Gaborone, Botswana |
+| Open Source | ❌ Mostly closed | ✅ Fully open |
+
+---
+
+## Cultural DNA
+
+Griot is trained on and inspired by:
+
+**Languages**
+- 🗣️ Setswana · Swahili · Yoruba · Hausa · Zulu · Igbo · Shona · Amharic
+
+**Music**
+- 🎵 Afrobeats · Amapiano · Highlife · Afrojuju · Bongo Flava
+
+**Visual Culture**
+- 🎨 Kente patterns · Adinkra symbols · African textile traditions
+
+**Storytelling**
+- 📖 African oral tradition · Griot storytelling · Ubuntu philosophy
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/charlesnyamudzanga/griot-app.git
+
+# Navigate into the project
+cd griot-app
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
-Create → Publish → Earn → Repeat
-All through an AI that actually knows Africa.
+
+### Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```env
+# Add your environment variables here
+NEXT_PUBLIC_APP_URL=http://localhost:3000
 ```
 
 ---
 
-## 🎯 Who It's For
+## Contributing
 
-| Creator Type | What They Get |
-|---|---|
-| 🎬 Film & Video Producers | AI scripts, storyboards, and video tools with African narratives |
-| 🎵 Musicians | AI music generation trained on Afrobeats, Amapiano, Gqom, Highlife |
-| ✍️ Writers & Bloggers | AI writing in African languages — Setswana, Swahili, Yoruba, Zulu |
-| 🎨 Designers | AI image generation with Kente, Ndebele, Adinkra, Ankara styles |
-| 📱 Social Media Creators | One-click multi-platform publishing |
-| 🏢 African Businesses | Brand content tools built for African markets |
+Griot is open source because Africa's AI infrastructure shouldn't be locked behind a paywall or owned by one company. It belongs to the continent.
 
----
+**We welcome contributions from African developers and allies worldwide.**
 
-## 🏗️ Six Pillars
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### 1. 🎨 AI Studio
-AI creative tools built on African aesthetics — not Western defaults.
-- Text-to-image with African art styles (Kente, Ndebele, Adinkra, Ankara)
-- AI copywriting in African languages
-- AI music generation (Afrobeats, Amapiano, Gqom)
-- AI video scripts for African narratives
-
-### 2. 🎬 Creator Suite
-End-to-end content production — write, design, produce, publish.
-- Video editor with African motion graphics
-- Podcast studio with African language transcription
-- Blog & article builder
-- Social media asset generator
-
-### 3. 🌍 Cultural Engine
-The intelligence layer — Africa's knowledge powering every AI feature.
-- African language NLP models (54 countries, 500+ languages)
-- Adinkra, Nsibidi, Tifinagh symbol libraries
-- African historical and contemporary art datasets
-- Oral tradition and proverb database
-
-### 4. 💰 Creator Economy
-Monetisation built for Africa — mobile money first.
-- Orange Money, EcoCash, M-Pesa, MTN MoMo integration
-- Creator marketplace — sell templates, art, music, scripts
-- Brand deals and sponsorship matching
-- PPP-adjusted African pricing
-
-### 5. 🤝 Community Hub
-Where African creators find each other and build movements.
-- Creator profiles and portfolios
-- Collaborative project rooms
-- Genre communities (Afrobeats, Nollywood, African Fashion)
-- Mentorship and skill exchange
-
-### 6. 📡 Distribution Engine
-Publish everywhere from one place.
-- One-click publish to YouTube, TikTok, Instagram, X
-- African platforms: Boomplay, Audiomack, ShowMax
-- Press release distribution to African newsrooms
+### Areas We Need Help
+- 🗣️ Adding more African language support
+- 🎨 African visual culture datasets
+- 📖 African storytelling pattern libraries
+- 🧪 Testing and QA
+- 📝 Documentation in African languages
 
 ---
 
-## 🛣️ Roadmap
+## Roadmap
 
-| Phase | Timeline | Milestone |
-|---|---|---|
-| 🔨 Foundation | Now → Month 3 | MVP: AI text tool + Setswana + African image styles |
-| 🌱 SADC Launch | Month 3 → 6 | Botswana, Zimbabwe, South Africa, Zambia, Namibia |
-| 🌍 Pan-Africa | Month 6 → 12 | West & East Africa — 100,000 creators |
-| 🌐 Global | Year 2+ | Diaspora markets — 1,000,000 creators |
-
----
-
-## 🔧 Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Frontend | React Native + Next.js |
-| AI Engine | Claude API (Anthropic) + Custom African language models |
-| Backend | Node.js + PostgreSQL |
-| Media Processing | FFmpeg + Cloudinary |
-| Payments | Flutterwave + DPO Pay (mobile money) |
-| Infrastructure | AWS Africa (Cape Town) |
-| Image AI | Stable Diffusion (fine-tuned on African art) |
+- [x] Platform launch
+- [x] Open source release
+- [ ] Setswana language model integration
+- [ ] Swahili content generation
+- [ ] Yoruba storytelling patterns
+- [ ] African visual style presets
+- [ ] Mobile app (Android first — Africa's primary device)
+- [ ] Offline mode for low-bandwidth regions
+- [ ] API for African developers to build on
 
 ---
 
-## 💸 Business Model
+## The Story
 
-| Tier | Price | What's Included |
-|---|---|---|
-| Free | $0 | Basic tools, Griot watermark, limited AI credits |
-| Creator Pro | $5/mo (~P70) | Full AI suite, no watermark, marketplace access |
-| Business | $19/mo | Teams, brand kits, analytics, priority support |
-| Marketplace | 15% commission | On every asset sold through Griot marketplace |
-| API Licensing | Custom | Cultural Engine API for media companies & governments |
+A griot (pronounced *gree-oh*) is a West African historian, storyteller, praise singer, poet, and musician. The griot is a keeper of oral tradition — the living memory of a people.
+
+That's what this platform is. A keeper of African creative tradition, powered by AI.
+
+Built by **Charles Nyamudzanga** — developer, cybersecurity professional, and founder of Forensic Eye Botswana — from Gaborone, Botswana.
 
 ---
 
-## 🏢 Built By
+## Links
 
-**Forensic Eye Botswana (Pty) Ltd**
-Gaborone, Botswana 🇧🇼
-
-- **Founder:** Charles Nyamudzanga (Sir Charles Nyams)
-- **Also building:** [forensic-eye-botswana-toolkit](https://github.com/charlesnyamudzanga/forensic-eye-botswana-toolkit) — Africa's first open-source digital forensics toolkit
-- **Website:** [griotcreate.com](https://griotcreate.com)
+- 🌍 **Live Platform:** [griot-app.vercel.app](https://griot-app.vercel.app)
+- 🐦 **X/Twitter:** [@CNyamudzanga](https://x.com/CNyamudzanga)
+- 📧 **Email:** charlesnyamudzanga@gmail.com
 
 ---
 
-## 🤝 Contributing
+## License
 
-Griot is open to contributions from African developers, designers, linguists, and cultural researchers. Read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting a pull request.
-
-Areas where we need help:
-- African language NLP models
-- African art style datasets for image AI
-- Mobile money API integrations
-- African platform distribution connectors
+This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-## 📜 License
+<div align="center">
 
-MIT License — see [LICENSE](LICENSE) for details.
+**Africa Creates. 🔥**
 
----
+*Built with purpose in Gaborone, Botswana 🇧🇼*
 
-## 📬 Contact
-
-**griotcreate.com** | charlesnyamudzanga@gmail.com
-
-> *"Africa created humanity. It is time Africa creates the tools that tell that story."*
-> — Charles Nyamudzanga, Founder
-
----
-*Built in Botswana 🇧🇼 · For Africa 🌍 · For the World 🌐*
+</div>
