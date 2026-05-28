@@ -687,16 +687,15 @@ async function generate() {
   out.textContent = 'Griot is creating from African culture...';
 
   try {
-    const response = await fetch('https://api.anthropic.com/v1/messages', {
+    const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'x-api-key': window.GRIOT_API_KEY || '',
-        'anthropic-version': '2023-06-01',
-        'anthropic-dangerous-direct-browser-access': 'true'
+        
+        'Authorization': 'Bearer ' + window.GRIOT_API_KEY, 'HTTP-Referer': 'https://griot-app.vercel.app'
       },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
+        model: 'meta-llama/llama-3.1-8b-instruct:free',
         max_tokens: 800,
         messages: [{ role: 'user', content: buildPrompt() }]
       })
@@ -711,7 +710,7 @@ async function generate() {
     } else {
       out.className = 'output-text generated';
       out.style.color = '';
-      out.textContent = data.content[0].text;
+      out.textContent = data.choices[0].message.content;
     }
   } catch (e) {
     out.className = 'output-text';
@@ -758,7 +757,8 @@ document.getElementById('emailInput').addEventListener('keypress', e => {
 });
 
 // SET API KEY — paste your key here between the quotes
-window.GRIOT_API_KEY = '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';
+window.GRIOT_API_KEY = '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';
 </script>
 </body>
 </html>
+
