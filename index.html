@@ -692,7 +692,9 @@ async function generate() {
       headers: {
         'Content-Type': 'application/json',
         
-        'Authorization': 'Bearer ' + window.GRIOT_API_KEY, 'HTTP-Referer': 'https://griot-app.vercel.app'
+        'Authorization': 'Bearer ' + window.GRIOT_API_KEY,
+        'HTTP-Referer': 'https://griot-app.vercel.app',
+        'X-Title': 'Griot AI Studio'
       },
       body: JSON.stringify({
         model: 'meta-llama/llama-3.1-8b-instruct:free',
@@ -706,7 +708,7 @@ async function generate() {
     if (data.error) {
       out.className = 'output-text';
       out.style.color = '#C4873A';
-      out.textContent = 'API key required. Add your Anthropic API key to activate Griot AI Studio.';
+      out.textContent = 'Error: ' + (data.error?.message || 'Generation failed. Please try again.');
     } else {
       out.className = 'output-text generated';
       out.style.color = '';
@@ -757,8 +759,7 @@ document.getElementById('emailInput').addEventListener('keypress', e => {
 });
 
 // SET API KEY — paste your key here between the quotes
-window.GRIOT_API_KEY = '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';
+window.GRIOT_API_KEY = 'PASTE_YOUR_OPENROUTER_KEY_HERE';
 </script>
 </body>
 </html>
-
